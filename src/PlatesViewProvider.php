@@ -6,7 +6,7 @@ use League\Plates\Engine;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
-class PimplePlatesViewProvider implements ServiceProviderInterface
+class PlatesViewProvider implements ServiceProviderInterface
 {
     /**
      * @param ContainerInterface|Container $pimple A container instance

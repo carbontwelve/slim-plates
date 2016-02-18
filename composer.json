@@ -1,0 +1,26 @@
+{
+  "name": "carbontwelve/slim-plates",
+  "description": "A Pimple service provider for including php-plates into slim3",
+  "keywords": [
+    "slim",
+    "plates",
+    "template",
+    "view"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Simon Dann",
+      "email": "simon.dann@gmail.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "^3.1",
+    "league/plates": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Carbontwelve\\SlimPlates\\": "src/"
+    }
+  }
+}

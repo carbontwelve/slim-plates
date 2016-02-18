@@ -19,6 +19,12 @@ class PimplePlatesViewProvider implements ServiceProviderInterface
         if (is_null($settings)){
             throw new InvalidSettingsException('Please configure the renderer settings with valid `template_path` and `template_ext` values.');
         }
-        $pimple['renderer'] = new PlatesRenderer($settings['template_path'], $settings['template_ext']);
+
+        $engine = new PlatesRenderer($settings['template_path'], $settings['template_ext']);
+        $engine->getEngine()->loadExtension(
+            new PlatesSlimRouterExtension($pimple->get('router'))
+        );
+
+        $pimple['renderer'] = $engine;
     }
 }

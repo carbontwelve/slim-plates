@@ -14,7 +14,7 @@ composer require carbontwelve/slim-plates
 
 ## Example usage with Slim 3
 
-```
+```php
 use Carbontwelve\SlimPlates\PlatesViewProvider;
 
 include "vendor/autoload.php";
@@ -39,7 +39,7 @@ $app->run();
 
 ## Example usage with any PSR-7 project
 
-```
+```php
 $yourData = [];
 $platesRenderer = new Carbontwelve\SlimPlates\PlatesRenderer('./path/to/templates', 'phtml');
 $response = $platesRenderer->render(new Response(), 'template', $yourData)

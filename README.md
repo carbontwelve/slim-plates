@@ -1,5 +1,7 @@
 # Slim3 Plates Service Provider
 
+[![styleci](https://styleci.io/repos/52001558/shield)](https://styleci.io/repos/52001558)
+
 This package contains a [container interop](https://github.com/container-interop/container-interop) compatible service 
 provider and a renderer for rendering [php plates](http://platesphp.com/) view scripts into a PSR-7 responsive object. 
 It works well with version 3 of the [Slim framework](http://www.slimframework.com/).

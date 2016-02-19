@@ -1,6 +1,8 @@
 # Slim3 Plates Service Provider
 
 [![styleci](https://styleci.io/repos/52001558/shield)](https://styleci.io/repos/52001558)
+[![Latest Version](https://img.shields.io/packagist/v/carbontwelve/slim-plates.svg?style=flat-square)](https://github.com/carbontwelve/slim-plates/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 This package contains a [container interop](https://github.com/container-interop/container-interop) compatible service 
 provider and a renderer for rendering [php plates](http://platesphp.com/) view scripts into a PSR-7 responsive object. 

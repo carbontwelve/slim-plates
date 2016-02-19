@@ -1,3 +1,7 @@
-<?php namespace Carbontwelve\SlimPlates\Exceptions;
+<?php
 
-class TemplatePathNotExistException extends \Exception {}
+namespace Carbontwelve\SlimPlates\Exceptions;
+
+class TemplatePathNotExistException extends \Exception
+{
+}

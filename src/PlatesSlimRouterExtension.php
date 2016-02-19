@@ -1,4 +1,6 @@
-<?php namespace Carbontwelve\SlimPlates;
+<?php
+
+namespace Carbontwelve\SlimPlates;
 
 use League\Plates\Engine;
 use League\Plates\Extension\ExtensionInterface;

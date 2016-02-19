@@ -1,4 +1,6 @@
-<?php namespace Carbontwelve\SlimPlates;
+<?php
+
+namespace Carbontwelve\SlimPlates;
 
 use Carbontwelve\SlimPlates\Exceptions\TemplatePathNotExistException;
 use League\Plates\Engine;
@@ -26,12 +28,13 @@ class PlatesRenderer
      *
      * @param string $templatePath
      * @param string $fileExtension
+     *
      * @throws TemplatePathNotExistException
      */
     public function __construct($templatePath = '', $fileExtension = 'phtml')
     {
         if (!realpath($templatePath)) {
-            throw new TemplatePathNotExistException('The template path ['. $templatePath .'] does not exist.');
+            throw new TemplatePathNotExistException('The template path ['.$templatePath.'] does not exist.');
         }
 
         $this->templatePath = $templatePath;
@@ -41,16 +44,18 @@ class PlatesRenderer
     }
 
     /**
-     * Render a plate template and return with a PSR-7 Response object
+     * Render a plate template and return with a PSR-7 Response object.
      *
      * @param ResponseInterface $response
      * @param $template
      * @param array $data
+     *
      * @return ResponseInterface
      */
     public function render(ResponseInterface $response, $template, array $data = [])
     {
         $response->getBody()->write($this->engine->render($template, $data));
+
         return $response;
     }
 

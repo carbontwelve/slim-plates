@@ -1,3 +1,7 @@
-<?php namespace Carbontwelve\SlimPlates\Exceptions;
+<?php
 
-class InvalidSettingsException extends \Exception {}
+namespace Carbontwelve\SlimPlates\Exceptions;
+
+class InvalidSettingsException extends \Exception
+{
+}

@@ -1,4 +1,6 @@
-<?php namespace Carbontwelve\SlimPlates;
+<?php
+
+namespace Carbontwelve\SlimPlates;
 
 use Carbontwelve\SlimPlates\Exceptions\InvalidSettingsException;
 use Interop\Container\ContainerInterface;
@@ -10,13 +12,15 @@ class PlatesViewProvider implements ServiceProviderInterface
 {
     /**
      * @param ContainerInterface|Container $pimple A container instance
-     * @return Engine
+     *
      * @throws InvalidSettingsException
+     *
+     * @return Engine
      */
     public function register(Container $pimple)
     {
         $settings = $pimple->get('settings')['renderer'];
-        if (is_null($settings)){
+        if (is_null($settings)) {
             throw new InvalidSettingsException('Please configure the renderer settings with valid `template_path` and `template_ext` values.');
         }
 

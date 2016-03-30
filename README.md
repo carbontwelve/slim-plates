@@ -33,7 +33,7 @@ $app = new Slim\App(
     ])
 );
 $container = $app->getContainer();
-$container->register(new Carbontwelve\SlimPlates\PlatesViewProvider());
+$container->register(new Carbontwelve\SlimPlates\PimplePlatesViewProvider());
 
 $app->get('/hello/{name}', function ($request, $response, $args) {
     return $this->renderer->render($response, "/hello.phtml", $args);

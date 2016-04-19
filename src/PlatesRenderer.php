@@ -60,7 +60,7 @@ class PlatesRenderer
     }
 
     /**
-     * Share data to specific templates
+     * Share data to specific templates.
      *
      * @param array $data
      * @param array $templates
@@ -71,7 +71,7 @@ class PlatesRenderer
     }
 
     /**
-     * Share data to all templates
+     * Share data to all templates.
      *
      * @param array $data
      */

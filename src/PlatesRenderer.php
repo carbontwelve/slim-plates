@@ -60,6 +60,27 @@ class PlatesRenderer
     }
 
     /**
+     * Share data to specific templates
+     *
+     * @param array $data
+     * @param array $templates
+     */
+    public function share(array $data, array $templates)
+    {
+        $this->engine->addData($data, $templates);
+    }
+
+    /**
+     * Share data to all templates
+     *
+     * @param array $data
+     */
+    public function global(array $data)
+    {
+        $this->engine->addData($data);
+    }
+
+    /**
      * @return Engine
      */
     public function getEngine()

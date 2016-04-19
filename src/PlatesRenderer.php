@@ -65,7 +65,7 @@ class PlatesRenderer
      * @param array $data
      * @param array $templates
      */
-    public function share(array $data, array $templates)
+    public function shareData(array $data, array $templates)
     {
         $this->engine->addData($data, $templates);
     }
@@ -75,7 +75,7 @@ class PlatesRenderer
      *
      * @param array $data
      */
-    public function global(array $data)
+    public function globalData(array $data)
     {
         $this->engine->addData($data);
     }
